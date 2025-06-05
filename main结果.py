@@ -34,7 +34,7 @@ print("password:",password)
 
 # 登录页面的 URL
 login_url = 'https://newehall.nwafu.edu.cn/login'
-target_url = simpledialog.askstring("输入", "请输入过程评教的地址：")
+target_url = simpledialog.askstring("输入", "请输入评教的地址：")
 # target_url = "https://newehall.nwafu.edu.cn/jwapp/sys/jwwspj/*default/index.do?t_s=1749014041014&amp_sec_version_=1&gid_=VnhSRTRsRlgzN2ZvSmZ6WU95S29BRW1paHk4djhXZmhCTkJEVzM3dXA5elJIYTljajJuZU9KQzdYUWpJekNMbFByY1BvSCtUcHJsSXdEV2ZTVWVXbVE9PQ&EMAP_LANG=zh&THEME=millennium#/pj"
 
 comments = [
@@ -58,7 +58,7 @@ chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x
 # pyinstaller --onefile main结果.py
 
 if getattr(sys, 'frozen', False):
-    base_path = simpledialog.askstring("输入", "请输入Driver路径：")
+    base_path = simpledialog.askstring("输入", "请输入Driver路径：（选填）")
     print("pathbase:",base_path)
     print("打包环境中尝试使用本地 ChromeDriver ...")
     # 获取打包后可执行文件所在目录
